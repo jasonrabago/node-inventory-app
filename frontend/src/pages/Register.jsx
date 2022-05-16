@@ -32,7 +32,7 @@ function Register() {
       navigate('/');
     }
 
-    dispatch(reset());
+    dispatch(reset);
   }, [user, isError, isSuccess, message, navigate, dispatch]);
 
   const onChange = (e) => {
@@ -102,7 +102,7 @@ function Register() {
               id='password'
               name='password'
               value={password}
-              placeholder='Enter password'
+              placeholder='Enter your password'
               onChange={onChange}
             />
           </div>
@@ -113,7 +113,7 @@ function Register() {
               id='password2'
               name='password2'
               value={password2}
-              placeholder='Confirm password'
+              placeholder='Confirm your password'
               onChange={onChange}
             />
           </div>
